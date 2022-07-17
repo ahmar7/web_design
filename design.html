@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="What does health equity looks like in Southeast Asia?">
+	<meta name="keywords" content="data, visualisation">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>What does health equity looks like in Southeast Asia?</title>
+
+	<script src="./js/dist/d3.v4.js"></script>
+	<script src="./js/dist/topojson.v1.min.js"></script>
+	<script src="./js/dist/queue.v1.min.js"></script>
+	<script src="./js/dist/d3-scale-radial.js"></script>
+	<script src="./js/globe.js"></script>
+	<script src="./js/stacked-bar-chart.js"></script>
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/globe.css">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--	Fonts	-->
+	<link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
+	<link href='http://fonts.googleapis.com/css?family=Droid+Sans:700' rel='stylesheet'>
+
+
+</head>
+
+<body>
+	<!--
+    <div id="ie-only">
+        Sorry, this visualisation will only display properly on modern browsers. Please view it on Firefox or Chrome.
+    </div>
+-->
+	<!--	<h1 data-aos="zoom-out-up" id="website-intro">What does health equity looks like in Southeast Asia?</h1>-->
+	<div data-aos="zoom-out-up" class="text-box">
+		<h1>Visualizing Health Equity in Southeast Asia</h1>
+</div>
+
+	<header>
+		
+		<div data-aos="fade-down" class="description">
+			<p><i><span style="font-size:50px"></span>These visualizations aim to simplify the concept, highlighting potential leverages at policy or programmatic levels in Southeast Asia.<span style="font-size:50px"></span></i></p>
+
+			<p> Health equity means different things to different people and communities, especially because it all depends on key social, economic, cultural and political factors to define social equity. Whether it’s access to affordable food, adequate transportation systems, cohesion and tolerance, overall financial stability, type of climate, or something completely unrelated to any of these suggestions, the definition of health and social equity is subjective.</p>
+			<p> Through this project, we intend to operationalise the concept of food security in Southeast Asia by identifying key indicators which could be monitored and visualized for strategy and actions. Additionally, this project also helps to get perspective on national and sub-national trends that’s happening around Southeast Asia region and how it has evolved retrospectively. 
+</p>
+		</div>
+		
+	</header>
+
+	<main>
+		<div class="data">
+
+		</div>
+
+		<div class="visualizations">
+
+
+			<div class="viz viz-1">
+				<h1 class="viz-heading">What does food security looks like in Southeast Asia?</h1>
+                <p class="viz-description"> The United Nations forecasted that the number of people facing severe food insecurity worldwide could double since the pandemic.
+				</p>
+               	<div id="legend"></div>
+				<div data-aos="zoom-out-up" id="visualisation">
+					<svg width="50" height="10"></svg>
+				</div>
+			          
+                   <div class='tableauPlaceholder' id='viz1658022031452' style='position: relative'><noscript><a href='#'><img alt='SpatialMap ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;FoodSecurityindicators&#47;SpatialMap&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                       <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                       <param name='embed_code_version' value='3' /> 
+                       <param name='site_root' value='' />
+                       <param name='name' value='FoodSecurityindicators&#47;SpatialMap' />
+                       <param name='tabs' value='no' />
+                       <param name='toolbar' value='yes' />
+                       <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;FoodSecurityindicators&#47;SpatialMap&#47;1.png' /> <param name='animate_transition' value='yes' />
+                       <param name='display_static_image' value='yes' />
+                       <param name='display_spinner' value='yes' />
+                       <param name='display_overlay' value='yes' />
+                       <param name='display_count' value='yes' />
+                       <param name='language' value='en-US' /></object></div>    
+				</div>
+			</div>
+
+
+			<div class="viz viz-2">
+				<h1 class="viz-heading">Conflict and food insecurity</h1>
+				<p class="viz-description"> The study of association between conflict and food insecurity has gained prominence in recent years. This trend was seen to increase directly for Indonesia and Cambodia where conflicts increased with food security, whereas the trend was inverse for Philippines. However it is also noted that this could be related to other political aspects within the country and food security is likely to be a confounding factor.
+				</p>
+				<div class="tableau">
+					<div data-aos="zoom-out-up" class='tableauPlaceholder' id='viz1658044862218' style='position: relative'><noscript><a href='#'><img alt='Association between food equity with conflicts ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Foodequityandconflicts&#47;LinkConflicts&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='Foodequityandconflicts&#47;LinkConflicts' />
+                        <param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fo&#47;Foodequityandconflicts&#47;LinkConflicts&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' /></object></div> 
+                    </div>  
+			     </div>
+   
+			<div class="viz viz-3">
+				<h1 class="viz-heading">Food price volability and implications within Cambodia</h1>
+				<p class="viz-description">Food price volability is not uniform and vary across provinces and types of commodities. 
+				</p>
+				<div class="tableau">
+                    <div data-aos="zoom-out-up" class='tableauPlaceholder' id='viz1658046758783' style='position: relative'><noscript><a href='#'><img alt='PriceTrending ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeTrends_16579115790910&#47;PriceTrending&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='site_root' value='' />
+                    <param name='name' value='TimeTrends_16579115790910&#47;PriceTrending' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ti&#47;TimeTrends_16579115790910&#47;PriceTrending&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' /></object></div> 
+                </div>                
+            </div>
+                               
+			<div class="viz viz-4">
+				<h1 class="viz-heading">Impact of food prices on vulnerability and poverty in Cmabodia</h1>
+				<p class="viz-description">Higher percentage of populations living in the north (proximity to Vietnam) are in severe poverty whereas higher percentage in the south (Coastal areas) are more vulnerable to poverty of which food prices could be one of the influencing factors.
+				</p>
+				<div class="tableau">
+                    <div data-aos="zoom-out-up" class='tableauPlaceholder' id='viz1658047315142' style='position: relative'><noscript><a href='#'><img alt='PriceTrendVulnerability ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8P&#47;8PGFRRDGG&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                    <param name='embed_code_version' value='3' /> 
+                    <param name='path' value='shared&#47;8PGFRRDGG' /> 
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;8P&#47;8PGFRRDGG&#47;1.png' /> 
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' /></object></div> 
+                </div>                
+            </div>
+ 
+<!--
+		
+		<div class="conclusion">
+				<h1 class="viz-heading">In conclusion</h1>
+				<p class="viz-description">If we wanna write something here
+				</p>
+		</div>
+	
+-->
+	<footer>
+		<div data-aos="fade-down" class="background">
+			This website was built as part of project report submitted in fulfilment for the GE6226 Master of Science (Applied Geographic Information Systems) 
+		<table data-aos="fade-down" class="name">
+			<tr>
+				<th class="student">Sharon Low</th>
+			<tr>
+				<td>A0211104H</td>
+			</tr>
+		</table>
+	</footer>
+
+
+	</main>
+
+	<script>
+		AOS.init();
+	</script>
+	<script src="./js/script.js"></script>
+
+	<!--	Viz 1	-->
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1658022031452');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800) { 
+            vizElement.style.width='1000px';
+            vizElement.style.height='827px';
+        } else if ( divElement.offsetWidth > 500) { 
+            vizElement.style.width='1000px';
+            vizElement.style.height='827px';
+        } else { 
+            vizElement.style.width='100%';
+            vizElement.style.height='1527px';
+        }                     
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+	<!--	Viz 2	-->
+	<script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1658044862218');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if (divElement.offsetWidth > 800) { 
+            vizElement.style.width='1000px';
+            vizElement.style.height='827px';
+        } else if (divElement.offsetWidth > 500) { 
+            vizElement.style.width='1000px';
+            vizElement.style.height='827px';
+        } else {
+            vizElement.style.width='100%';
+            vizElement.style.height='1477px';
+        }                     
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);               
+                
+	</script>
+	<!--	Viz 3	-->
+	<script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1658046758783');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800) { 
+          vizElement.style.width='1000px';
+          vizElement.style.height='827px';
+        } else if ( divElement.offsetWidth > 500) { 
+          vizElement.style.width='1000px';
+          vizElement.style.height='827px';
+        } else { 
+          vizElement.style.width='100%';
+          vizElement.style.height='777px';}                     
+        var scriptElement = document.createElement('script');                    
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+                
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1658047315142');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        if ( divElement.offsetWidth > 800) { 
+            vizElement.style.width='1000px';
+            vizElement.style.height='827px';
+        } else if ( divElement.offsetWidth > 500 ) { 
+            vizElement.style.width='1000px';
+            vizElement.style.height='827px';
+        } else { 
+            vizElement.style.width='100%';
+            vizElement.style.height='1577px';
+        }                     
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+    </script>
+
+</body></html>
