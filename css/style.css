@@ -114,3 +114,17 @@ p {
     margin-right: 10px;
   }
 }
+
+footer {
+  background-color: black;
+  color: white;
+  padding-top: 10px;
+}
+.background {
+  text-align: center;
+}
+table {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
